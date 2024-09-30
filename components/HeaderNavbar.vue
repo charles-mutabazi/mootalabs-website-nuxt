@@ -1,26 +1,23 @@
 <script setup lang="ts">
-
 const links = [
-  [{
-    avatar: {
-      src: '~/assets/logo.svg',
-    },
-  }],
+  [], // empty array for the logo
+
   [
     {
       label: 'Home',
-      icon: 'i-heroicons-home',
       to: '/'
     },
     {
       label: 'About Us',
-      icon: 'i-heroicons-chart-bar',
       to: '/about'
     },
     {
-      label: 'Command Palette',
-      icon: 'i-heroicons-command-line',
-      to: '/components/command-palette'
+      label: 'Contact Us',
+      to: '/contact'
+    },
+    {
+      label: 'Blog',
+      to: '/blog'
     }
   ]
 ]
@@ -31,6 +28,12 @@ const links = [
     <div class="w-full dark:bg-gray-800 bg-gray-100">
       <UContainer fluid>
         <div class="flex justify-between items-center py-2">
+
+          <router-link to="/">
+            <img :src="$colorMode.preference == 'light' ? 'logo.svg' : 'logo-darkmode.svg'"
+                 alt="Moota Labs" class="w-1/4">
+          </router-link>
+
           <UHorizontalNavigation :links="links"/>
         </div>
       </UContainer>
