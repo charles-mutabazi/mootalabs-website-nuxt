@@ -1,75 +1,28 @@
-# Nuxt UI Minimal Starter
+# Moota Labs Website
 
-Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
+Welcome to the Moota Labs website repository! This project is built with Nuxt, providing a fast and efficient web experience.
 
-## Setup
+## 🚀 About
 
-Make sure to install the dependencies:
+This website serves as the online presence for Moota Labs, showcasing our products, services, and company information.
 
-```bash
-# npm
-npm install
+## 🛠 Tech Stack
 
-# pnpm
-pnpm install
+- [Nuxt](https://nuxtjs.org/) - The Intuitive Vue Framework
+- [Nuxt UI](https://ui.nuxt.com/) - A UI Library for Modern Web Apps
 
-# yarn
-yarn install
+## 🌐 Deployment
 
-# bun
-bun install
-```
+This website is deployed using Firebase App Hosting, ensuring fast and reliable access for our users worldwide.
 
-## Development Server
+## 📝 License
 
-Start the development server on `http://localhost:3000`:
+This project is licensed under the MIT License.
 
-```bash
-# npm
-npm run dev
+## 📞 Contact
 
-# pnpm
-pnpm run dev
+For any queries, please reach out to us at info@mootalabs.com.
 
-# yarn
-yarn dev
+---
 
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Made with ❤️ by the Moota Labs team
