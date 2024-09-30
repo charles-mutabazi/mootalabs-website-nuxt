@@ -1,8 +1,9 @@
 <template>
-    <HeaderNavbar/>
-    <UContainer fluid class="h-screen flex flex-col">
-      <main class="flex-1 overflow-auto">
-        <slot/>
-      </main>
-    </UContainer>
+  <div class="flex flex-col min-h-screen">
+  <HeaderNavbar/>
+  <main class="flex-grow w-full">
+    <slot/>
+  </main>
+    <Footer/>
+  </div>
 </template>

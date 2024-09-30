@@ -12,13 +12,9 @@ const links = [
       to: '/about'
     },
     {
-      label: 'Contact Us',
-      to: '/contact'
-    },
-    {
       label: 'Blog',
       to: '/blog'
-    }
+    },
   ]
 ]
 </script>
@@ -30,8 +26,8 @@ const links = [
         <div class="flex justify-between items-center py-2">
 
           <router-link to="/">
-            <img :src="$colorMode.preference == 'light' ? 'logo.svg' : 'logo-darkmode.svg'"
-                 alt="Moota Labs" class="w-1/4">
+            <NuxtImg :src="$colorMode.preference == 'light' ? 'logo.svg' : 'logo-darkmode.svg'"
+                     alt="Moota Labs" class="w-1/3"/>
           </router-link>
 
           <UHorizontalNavigation :links="links"/>
