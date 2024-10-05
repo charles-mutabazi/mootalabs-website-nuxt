@@ -5,8 +5,10 @@
         <!-- Logo and company info -->
         <div class="col-span-1 md:col-span-2">
           <router-link to="/">
+            <ClientOnly>
             <NuxtImg :src="$colorMode.preference === 'light' ? 'logo.svg' : 'logo-darkmode.svg'"
                      alt="Moota Labs" class="w-1/3 mb-4" />
+            </ClientOnly>
           </router-link>
         </div>
 
