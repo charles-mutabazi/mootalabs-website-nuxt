@@ -13,9 +13,4 @@ export default defineNuxtConfig({
       ],
     }
   },
-  ui: {
-    icons: {
-      dynamic: true
-    },
-  },
 })

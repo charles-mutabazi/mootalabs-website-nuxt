@@ -1,11 +1,9 @@
 <template>
   <section class="py-16">
-    <UContainer>
-      <h2 class="text-4xl font-bold text-center mb-12">{{ title }}</h2>
-
+    <div>
       <div class="flex flex-col md:flex-row items-center gap-8">
-        <!-- Product Image or SVG -->
-        <div class="w-full md:w-1/2">
+        <!-- Product Image or SVG if imagePosition is 'left' -->
+        <div class="w-full md:w-1/2" v-if="imagePosition === 'left'">
           <img v-if="imageType === 'image'" :src="imageSrc" :alt="productName" class="w-full h-auto"/>
           <div v-else-if="imageType === 'svg'" v-html="imageSrc" class="w-full h-auto"></div>
         </div>
@@ -25,17 +23,23 @@
               @click="$emit('cta-click')"
           />
         </div>
+
+        <!-- Product Image or SVG if imagePosition is 'right' -->
+        <div class="w-full md:w-1/2" v-if="imagePosition === 'right'">
+          <img v-if="imageType === 'image'" :src="imageSrc" :alt="productName" class="w-full h-auto"/>
+          <div v-else-if="imageType === 'svg'" v-html="imageSrc" class="w-full h-auto"></div>
+        </div>
       </div>
-    </UContainer>
+    </div>
   </section>
 </template>
 
 <script setup lang="ts">
 interface Props {
-  title: string;
   productName: string;
   description: string;
   imageSrc: string;
+  imagePosition: 'left' | 'right';
   imageType: 'image' | 'svg';
   ctaText?: string;
 }
