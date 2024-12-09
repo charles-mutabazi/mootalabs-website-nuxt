@@ -3,8 +3,8 @@
     <div>
       <div class="flex flex-col md:flex-row items-center gap-8">
         <!-- Product Image or SVG if imagePosition is 'left' -->
-        <div class="w-full md:w-1/2" v-if="imagePosition === 'left'">
-          <img v-if="imageType === 'image'" :src="imageSrc" :alt="productName" class="w-full h-auto"/>
+        <div class="w-full md:w-1/2 dark:bg-gray-700 rounded-2xl flex justify-center" v-if="imagePosition === 'left'">
+          <NuxtImg v-if="imageType === 'image'" :src="imageSrc" :alt="productName" class="" height="600"/>
           <div v-else-if="imageType === 'svg'" v-html="imageSrc" class="w-full h-auto"></div>
         </div>
 
@@ -25,8 +25,8 @@
         </div>
 
         <!-- Product Image or SVG if imagePosition is 'right' -->
-        <div class="w-full md:w-1/2" v-if="imagePosition === 'right'">
-          <img v-if="imageType === 'image'" :src="imageSrc" :alt="productName" class="w-full h-auto"/>
+        <div class="w-full md:w-1/2 dark:bg-gray-700 rounded-2xl flex justify-centerr" v-if="imagePosition === 'right'">
+          <NuxtImg v-if="imageType === 'image'" :src="imageSrc" :alt="productName" class="" height="600"/>
           <div v-else-if="imageType === 'svg'" v-html="imageSrc" class="w-full h-auto"></div>
         </div>
       </div>

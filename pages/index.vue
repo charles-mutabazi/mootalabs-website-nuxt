@@ -18,9 +18,9 @@
 
 
     <ProductShowcase
-        productName="Drink Drifter Machine"
+        productName="Drink Drifter Vending Machine"
         description="Drink Drifter is Rwanda's first locally-manufactured smart vending machine, developed by MOOTA LABS to provide 24/7 automated retail access. The cashless system supports both mobile money and NFC card payments, catering to Rwanda's high mobile money adoption rate. Featuring remote inventory management and targeting locations like universities, businesses, and public spaces, Drifter aims to eliminate traditional shopping constraints. The machine is fully manufactured in Rwanda, creating local jobs while modernizing retail convenience. With a serviceable market of $27.16M, Drifter positions itself as a revolutionary solution in the automated retail space."
-        imageSrc="showcase_kaaz.jpg"
+        imageSrc="vending_machine_illustration.png"
         imageType="image"
         imagePosition="left"
         ctaText="Read More"
