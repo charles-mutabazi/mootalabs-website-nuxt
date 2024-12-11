@@ -43,7 +43,12 @@ const links = [
                      alt="Moota Labs" class="w-1/3"/>
           </router-link>
           </ClientOnly>
-          <UHorizontalNavigation :links="links"/>
+          <UHorizontalNavigation
+              :links="links"
+              :ui="{
+                active: 'text-primary-500 font-semibold before:bg-transparent dark:text-primary-100',
+              }"
+          />
         </div>
       </UContainer>
     </div>

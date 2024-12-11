@@ -6,15 +6,18 @@
   </UContainer>
   <div class="mt-10 dark:bg-gray-800 bg-gray-100 pt-8">
     <UContainer>
+      <div class="text-center">
       <h2 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Our Products</h2>
 
-      <p class="text-3xl mb-4 text-gray-500 dark:text-white font-italic">
+      <p class="text-2xl mb-4 text-gray-500 dark:text-white font-italic">
         We are always working on some interesting projects at Moota Labs, and while innovation never sleeps, we're
         particularly excited to share a glimpse of our current initiatives. While there are several exciting
         projects in our pipeline that we're not quite ready to reveal, the projects below showcase our dedication to combining
         cutting-edge technology with practical solutions that serve our community. Stay tuned for more innovations that
         will continue to improve the technological lifestyle in East Africa.
       </p>
+
+      </div>
 
 
     <ProductShowcase

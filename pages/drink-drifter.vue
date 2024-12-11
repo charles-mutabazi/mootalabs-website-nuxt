@@ -5,10 +5,13 @@
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div class="space-y-8">
             <h1 class="text-5xl font-bold leading-tight">
-              The Future of Vending is Here
+              The Future of Vending is Here...
             </h1>
-            <p class="text-xl text-blue-100">
-              Meet Drifter, Rwanda's first smart cashless vending machine platform designed for local needs.
+            <p class="text-xl dark:text-blue-100">
+              Meet Drink Drifter Vending Machine, Rwanda's first smart cashless vending machine platform designed for
+              local needs. Combining cutting-edge technology with locally optimized mobile money solutions, we're
+              revolutionizing how people access refreshments 24/7. Our machines create a seamless, contactless
+              experience while bridging the gap between convenience and modern digital payments in Rwanda.
             </p>
           </div>
           <div class="relative">
@@ -25,19 +28,19 @@
     <div class="container mx-auto px-4 py-24">
       <div class="text-center mb-16">
         <h2 class="text-3xl font-bold mb-4 dark:text-white">Smart Features for Modern Needs</h2>
-        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-xl">
           Experience the convenience of modern vending with our cutting-edge features designed for both customers and operators.
         </p>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <UCard v-for="feature in features" :key="feature.title" class="p-6">
-          <div class="space-y-4">
+          <div class="space-y-4 items-center">
             <div class="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-xl w-16">
               <UIcon :name="feature.icon" class="w-8 h-8 text-blue-600 dark:text-blue-400" />
             </div>
             <h3 class="text-xl font-bold dark:text-white">{{ feature.title }}</h3>
-            <p class="text-gray-600 dark:text-gray-300">{{ feature.description }}</p>
+            <p class="text-gray-600 dark:text-gray-300 text-lg">{{ feature.description }}</p>
           </div>
         </UCard>
       </div>
@@ -48,7 +51,7 @@
       <div class="container mx-auto px-4 py-24">
         <div class="text-center mb-16">
           <h2 class="text-3xl font-bold mb-4 dark:text-white">How It Works</h2>
-          <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-xl">
             Simple, secure, and convenient - get your refreshments in three easy steps.
           </p>
         </div>
@@ -60,7 +63,7 @@
               <UIcon :name="step.icon" class="w-8 h-8 text-blue-600 dark:text-blue-400" />
             </div>
             <h3 class="text-xl font-bold dark:text-white">{{ step.title }}</h3>
-            <p class="text-gray-600 dark:text-gray-300">{{ step.description }}</p>
+            <p class="text-gray-600 dark:text-gray-300 text-lg">{{ step.description }}</p>
           </div>
         </div>
       </div>
@@ -98,7 +101,7 @@ const features = [
   {
     icon: 'i-heroicons-device-phone-mobile',
     title: 'Mobile App',
-    description: 'Manage your vending machine fleet from anywhere using our mobile application.'
+    description: 'Simply get close to the machine, and place your order through our mobile app - no physical contact needed.'
   }
 ]
 

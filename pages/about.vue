@@ -5,7 +5,7 @@
       <div class="container mx-auto px-4 py-20">
         <div class="max-w-3xl mx-auto text-center">
           <h1 class="text-5xl font-bold mb-6 text-gray-900 dark:text-white">About Moota Labs</h1>
-          <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+          <p class="text-2xl text-gray-600 dark:text-gray-300 leading-relaxed">
             We're a dynamic tech company at the forefront of innovation, crafting cutting-edge solutions that redefine
             the digital experience.
           </p>
