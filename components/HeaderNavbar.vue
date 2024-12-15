@@ -46,7 +46,7 @@ const links = [
           <UHorizontalNavigation
               :links="links"
               :ui="{
-                active: 'text-primary-500 font-semibold before:bg-transparent dark:text-primary-100',
+                active: 'before:bg-primary text-white font-semibold after:bg-transparent dark:after:bg-transparent hover:before:bg-primary dark:hover:before:bg-primary',
               }"
           />
         </div>
