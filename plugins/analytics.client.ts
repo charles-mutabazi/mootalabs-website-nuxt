@@ -5,16 +5,23 @@ import {
 } from 'firebase/analytics'
 
 export default defineNuxtPlugin(async () => {
-  const firebaseApp = useFirebaseApp()
-
-  console.log('Loading analytics')
+  // Check if we're in production
+  const isDevelopment = process.env.NODE_ENV !== 'production'
 
   let analytics: Analytics | null = null
-  if (await isSupported()) {
-    analytics = initializeAnalytics(firebaseApp)
-    console.log('Loaded analytics')
+
+  // Only initialize analytics in production
+  if (!isDevelopment) {
+    const firebaseApp = useFirebaseApp()
+
+    if (await isSupported()) {
+      analytics = initializeAnalytics(firebaseApp)
+      console.log('Analytics initialized in production')
+    } else {
+      console.log('Analytics not supported')
+    }
   } else {
-    console.log('Analytics not supported')
+    console.log('Analytics disabled in development')
   }
 
   return {
