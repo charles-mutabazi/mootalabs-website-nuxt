@@ -13,9 +13,12 @@
     "@nuxt/devtools": "latest",
     "@nuxt/image": "^1.8.0",
     "@nuxt/ui": "^2.18.5",
-    "nuxt": "^3.12.4"
+    "nuxt": "^3.12.4",
+    "nuxt-vuefire": "^1.0.4"
   },
   "dependencies": {
-    "@iconify-json/heroicons": "^1.2.1"
+    "@iconify-json/heroicons": "^1.2.1",
+    "firebase": "^10.14.1",
+    "vuefire": "^3.2.0"
   }
 }
