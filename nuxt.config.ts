@@ -1,8 +1,20 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxt/ui", "@nuxt/image"],
+  modules: ["@nuxt/ui", "@nuxt/image", 'nuxt-vuefire'],
   compatibilityDate: "2024-09-29",
+
+  vuefire: {
+    config: {
+      apiKey: process.env.FIREBASE_API_KEY,
+      authDomain: "moota-labs.firebaseapp.com",
+      projectId: "moota-labs",
+      storageBucket: "moota-labs.firebasestorage.app",
+      messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+      appId: process.env.FIREBASE_APP_ID,
+      measurementId: process.env.FIREBASE_MEASUREMENT_ID,
+    }
+  },
 
   app: {
     head: {
