@@ -37,12 +37,10 @@ const links = [
     <div class="w-full dark:bg-gray-800 bg-gray-100">
       <UContainer>
         <div class="flex justify-between items-center py-2">
-          <ClientOnly>
           <router-link to="/">
             <NuxtImg :src="$colorMode.preference == 'light' ? 'logo.svg' : 'logo-darkmode.svg'"
                      alt="Moota Labs" class="h-12"/>
           </router-link>
-          </ClientOnly>
           <UHorizontalNavigation
               :links="links"
               :ui="{

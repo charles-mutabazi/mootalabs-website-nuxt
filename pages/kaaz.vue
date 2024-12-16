@@ -36,9 +36,7 @@
       </div>
 
       <!-- Right Image Section -->
-      <ClientOnly>
-        <NuxtImg src="/showcase_kaaz.jpg"/>
-      </ClientOnly>
+      <NuxtImg src="/showcase_kaaz.jpg"/>
     </div>
 
     <UDivider class="mt-16"/>

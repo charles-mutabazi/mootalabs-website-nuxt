@@ -1,8 +1,6 @@
 <template>
   <UContainer>
-    <ClientOnly>
     <NuxtImg :src="$colorMode.preference == 'light' ? '/moota_labs_logo_hero.png' : '/moota_labs_logo_hero_dark.png'"/>
-    </ClientOnly>
   </UContainer>
   <div class="mt-10 dark:bg-gray-800 bg-gray-100 pt-8">
     <UContainer>

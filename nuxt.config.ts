@@ -6,13 +6,25 @@ export default defineNuxtConfig({
 
   vuefire: {
     config: {
-      apiKey: "AIzaSyAbKaWSMia6zNA1-wO1rndCacg5ZaOGZiM",
+      apiKey: process.env.FIREBASE_API_KEY,
       authDomain: "moota-labs.firebaseapp.com",
       projectId: "moota-labs",
       storageBucket: "moota-labs.firebasestorage.app",
-      messagingSenderId: "689168197483",
-      appId: "1:689168197483:web:c9702786adbf65ce324e2e",
-      measurementId: "G-90FRYLM7M9",
+      messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+      appId: process.env.FIREBASE_APP_ID,
+      measurementId: process.env.FIREBASE_MEASUREMENT_ID,
+    }
+  },
+
+  // Required for Firebase static hosting
+  ssr: true,
+  nitro: {
+    firebase: {
+      gen: 2
+    },
+    prerender: {
+      crawlLinks: true,
+      routes: ['/']
     }
   },
 
