@@ -26,6 +26,13 @@ jobs:
           VITE_FIREBASE_MEASUREMENT_ID=${{ secrets.FIREBASE_MEASUREMENT_ID }}
           EOF
       - run: npm ci && npm run build
+
+      # Copy .env to .output/server after build
+      - name: Copy .env to server output
+        run: |
+          mkdir -p .output/server
+          cp .env .output/server/.env
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
