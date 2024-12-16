@@ -6,13 +6,13 @@ export default defineNuxtConfig({
 
   vuefire: {
     config: {
-      apiKey: process.env.FIREBASE_API_KEY,
+      apiKey: process.env.VITE_FIREBASE_API_KEY,
       authDomain: "moota-labs.firebaseapp.com",
       projectId: "moota-labs",
       storageBucket: "moota-labs.firebasestorage.app",
-      messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-      appId: process.env.FIREBASE_APP_ID,
-      measurementId: process.env.FIREBASE_MEASUREMENT_ID,
+      messagingSenderId: process.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+      appId: process.env.VITE_FIREBASE_APP_ID,
+      measurementId: process.env.VITE_FIREBASE_MEASUREMENT_ID,
     }
   },
 
