@@ -20,12 +20,6 @@ jobs:
           echo "VITE_FIREBASE_MESSAGING_SENDER_ID=${{ vars.FIREBASE_MESSAGING_SENDER_ID }}" >> .env
           echo "VITE_FIREBASE_APP_ID=${{ vars.FIREBASE_APP_ID }}" >> .env
           echo "VITE_FIREBASE_MEASUREMENT_ID=${{ vars.FIREBASE_MEASUREMENT_ID }}" >> .env
-      - name: Debug .env file
-        run: |
-          pwd
-          ls -la
-          echo "Content of .env file:"
-          cat .env || echo ".env file not found"
 
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
